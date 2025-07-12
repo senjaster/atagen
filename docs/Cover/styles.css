@@ -1,0 +1,138 @@
+body {
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+td {
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	text-align: center;
+	padding-bottom: 2em;
+}
+td.m {
+	font-size: small;
+	text-align: center;
+}
+td.a {
+	font-size: x-small;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+p {
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	text-indent: 2ex;
+	margin: 0px;
+}
+p.autor {
+	text-align: center;
+	font-weight: bold;
+}
+p.img {
+	text-align: center;
+	text-indent: 0pt;
+}
+p.verse {
+	text-indent: 0pt;
+	margin-bottom: 1em;
+	margin-left: 20%;
+}
+p.ex2 {
+	font-family: Code2000;
+	font-size: medium;
+	margin-left: 4em;
+}
+p.pag {
+	text-align: right;
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+p.warn {
+	font-family: "Times New Roman", Times, serif;
+	font-size: small;
+	text-align: justify;
+	text-indent: 2ex;
+}
+div.warn {
+	border: thin solid #000000;
+	margin-right: 12%;
+	margin-left: 12%;
+	padding: 1%;
+}
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	COLOR: #660033;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: 3em;
+}
+h2 {
+	font-family: Arial, sans-serif;
+	COLOR: #660033;
+	margin-top: 1em;
+	margin-bottom: 0px;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 2em;
+	font-size: medium;
+}
+h3 {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}
+h4 {
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	font-style: italic;
+	margin-top: 1ex;
+	margin-bottom: 0ex;
+	margin-left: 0px;
+	font-weight: normal;
+}
+h5 {
+	font-family: Arial, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	margin-top: 2ex;
+	margin-bottom: 1ex;
+}
+a {
+	COLOR: #660033;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	COLOR: red; TEXT-DECORATION: none
+	}
+a.nav {
+	color: #660033;
+	text-decoration: none;
+	font-size: small;
+	font-weight: normal;
+}
+a.nav:hover {
+	color: red;
+}
+a.warn {
+	font-weight: bold;
+	color: #000000;
+}
+a.warn:hover {
+	font-weight: bold;
+	color: red;
+}
+td.l {
+	font-family: Code2000, "Arial Unicode MS";
+	font-size: large;
+	font-weight: normal;
+}
+sup {
+	font-size: x-small;
+}

@@ -1,0 +1,31 @@
+body {
+	background-color: #ebece4;
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+TD {FONT-FAMILY: Palatino Linotype; TEXT-ALIGN: center}
+P {FONT-FAMILY: Arial; TEXT-ALIGN: center}
+H1 {
+	FONT-FAMILY: "Times New Roman";
+	FONT-SIZE: x-large;
+	TEXT-ALIGN: right;
+	margin: 0px 2em 0px 0px;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+A {
+	text-decoration: none;
+	color: #336699;
+	font-weight: bold;
+}
+A:hover {
+	COLOR: #FF0000;
+	TEXT-DECORATION: none;
+	border-bottom-style: dotted;
+	border-bottom-width: thin;
+}
+A.pict:hover {
+	border-bottom-style: none;
+}

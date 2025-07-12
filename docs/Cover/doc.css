@@ -1,0 +1,40 @@
+body {
+	margin-top: 3em;
+	margin-right: 15%;
+	margin-bottom: 5em;
+	margin-left: 15%;
+}
+h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+}
+p {
+	margin: 0px;
+}
+p.img {
+	text-align: center;
+	text-indent: 0pt;
+}
+sup {
+	font-size: x-small;
+}
+a {
+	COLOR: #660033;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	COLOR: #red; TEXT-DECORATION: none
+	}
+a.nav {
+	color: #660033;
+	text-decoration: none;
+	font-size: small;
+	font-weight: normal;
+}
+a.nav:hover {
+	color: red;
+}
