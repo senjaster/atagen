@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: Генеалогия Атабеков, Богдановых и иных лиц из оных впоследствии произошедших
+site_url: https://geni.f13f.ru/
+theme:
+  name: material
+plugins:
+  - glightbox
+markdown_extensions:
+  - abbr
+  - pymdownx.betterem
