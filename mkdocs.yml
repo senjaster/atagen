@@ -3,8 +3,7 @@ site_url: https://geni.f13f.ru/
 theme:
   name: material
 plugins:
-    - glightbox:
-        width: 90%
+    - glightbox
     - search
     - autorefs
 markdown_extensions:
@@ -59,10 +58,12 @@ nav:
         - Соня: people/SK.md
         - Катя: people/KK.md
     - Богдановы: 
+        - Генеалогическое дерево: people/MEB-ancestors.md
         - Надежда Федоровна: people/NFBdM.md
         - Михаил Егорович: people/MEB.md
         - Семья Егора Егоровича Богданова: people/EEB.md
         - Мария Егоровна Сперанская: people/MESB.md
+    - Богдановский альбом: album/index.md
     - Сомовы и де Медем: 
         - Родословцы Сомовых и де Медемов: people/SdM.md
         - Авдотья Николаевна: people/ANdMS.md
@@ -71,3 +72,4 @@ nav:
         - Константин Юрьевич: people/KJuK.md
     - Владимир Александрович Нестеров: people/VAN.md
     - Эммануил Филиппович Циппельзон: people/EFC.md
+    

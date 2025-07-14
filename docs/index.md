@@ -8,9 +8,11 @@ graph TD
     classDef male fill:#BBDEFB,stroke:#1565C0,color:black
     classDef female fill:#F8BBD0,stroke:#C2185B,color:black
     classDef couple fill:#F0F0F0,stroke:#F0F0F0,stroke-width:1px
+    classDef link fill:#FFFFFF,stroke:#F0F0F0,stroke-width:2px
     
     %% Определение узлов для людей
     %% Семья Богдановых
+    MEB-ancestors["Предки<br>М.Е. Богданова"]:::link
     MEB["Михаил<br>Егорович<br>Богданов"]:::male
     NFBdM["Надежда<br>Федоровна<br>де Медем"]:::female
     AMO["Анастасия<br>Михайловна<br>Богданова/Ордынская"]:::female
@@ -20,6 +22,7 @@ graph TD
     YuO["Юрий<br>Ордынский"]:::male
     
     %% Семья Атабек/Атабекян
+    MbA-ancestors["Предки Мосес-бека"]:::link
     MbA["Мосес-бек<br>Атабек"]:::male
     AMA["Александр<br>Моисеевич<br>Атабекян"]:::male
     ENS["Екатерина<br>Николаевна<br>Соколова-Атабекян"]:::female
@@ -28,17 +31,6 @@ graph TD
     MSB["Марианна<br>Стоиловна<br>Бойчева"]:::female
     EAAB["Екатерина<br>Арсеновна<br>Атабекова-Бойчева"]:::female
     AAA["Ариана<br>Арсеновна<br>Атабек"]:::female
-
-    
-    click MbA "/atabek/MbA/"
-    click AMA "/atabek/AMA/"
-    click ENS "/atabek/ENS/"
-    click ArAA "/atabek/ArAA"
-    click Ariana_sen "/atabek/Ariana_sen"
-    click MSB "/boychev/MSB"
-    click EAAB "/atabek/EAAB"
-    
-
 
     %% Семья Бирюковых (родители)
     DPB["Дмитрий<br>Петрович<br>Бирюков"]:::male
@@ -50,8 +42,6 @@ graph TD
     AVB["Андрей<br>Викторович<br>Бирюков"]:::male
     MYK["Марина<br>Юрьевна<br>Константинова"]:::female
     AAB["Арсений<br>Андреевич<br>Бирюков"]:::male
-
-    click VDB "/biryukov/VDB"
 
     %% Семья Гасовых
     BPG["Борис<br>Петрович<br>Гасов"]:::male
@@ -85,6 +75,11 @@ graph TD
     
     %% Использование subgraph для обозначения брачных пар
     
+
+    %% Семья Атабекянов
+    MbA-ancestors ---> MbA
+    MbA --> AMA
+
     %% Семья де Медем
     subgraph couple_ANdMS_FFdM [" "]
         ANdMS
@@ -102,6 +97,8 @@ graph TD
     couple_MEB_NFBdM:::couple
     couple_MEB_NFBdM --> AMO
     couple_MEB_NFBdM --> NMB
+
+    MEB-ancestors --> MEB
     
     %% Семья Ордынских
     subgraph couple_SPO_AMO [" "]
@@ -111,9 +108,7 @@ graph TD
     couple_SPO_AMO:::couple
     couple_SPO_AMO --> MSO
     couple_SPO_AMO --> YuO
-    
-    %% Семья Атабекянов
-    MbA --> AMA
+
     
     subgraph couple_AMA_ENS [" "]
         AMA
@@ -184,8 +179,8 @@ graph TD
     couple_TFK_EAAB --> LTK
     
     %% Семья Соколовых
-    NDS --> ENS
     NDS --> VNO
+    NDS --> ENS
     
     %% Семья Островских
     subgraph couple_VNO_Unknown [" "]
@@ -221,4 +216,46 @@ graph TD
     end
     couple_YAK_NEK:::couple
     couple_YAK_NEK --> KJuK
+
+    click MbA-ancestors "/people/MbA-ancestors"
+    click MbA "/people/MbA"
+    click AMA "/people/AMA"
+    click ENS "/people/ENS"
+    click ArAA "/apeople/ArAA"
+    click Ariana_sen "/people/Ariana-sen"
+    click MSB "/people/MSB"
+    click EAAB "/people/EAAB"
+    click AAA "/people/AAA"
+    click MEB-ancestors "/people/MEB-ancestors"
+    click MEB "/people/MEB"
+    click NFBdM "/people/NFBdM"
+    click AMO "/people/AMO"
+    click NMB "/people/NMBB"
+    click SPO "/people/SPO"
+    click DPB "/people/DPB"
+    click NDB "/people/NDB"
+    click SNB "/people/SNB"
+    click AVB "/people/AVB"
+    click MYK "/people/MYK"
+    click AAB "/people/AAB"
+    click BPG "/people/BPG"
+    click NNG "/people/NNG"
+    click TFK "/people/TFK"
+    click MTK "/people/MTK"
+    click LTK "/people/LTK"
+    click NDS "/people/NDS"
+    click VNO "/people/VNO"
+    click SPB "/people/SPB"
+    click ASB "/people/ASB"
+    click TSB "/people/TSB"
+    click EFC "/people/EFC"
+    click NEK "/people/NEK"
+    click YAK "/people/YAK"
+    click KJuK "/people/KJuK"
+    click ANdMS "/people/ANdMS"
+    click FFdM "/people/SdM"
+    click VDB "/biryukov/VDB"
+
 ```
+
+Диаграмма кликабельна
