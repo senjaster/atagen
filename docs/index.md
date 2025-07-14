@@ -37,7 +37,6 @@ graph TD
     AAA_["Анна<br>Арсеньевна<br>Андриевская"]:::female
     NDB["Николай<br>Дмитриевич<br>Бирюков"]:::male
 
-    SNB["Сергей<br>Николаевич<br>Бирюков"]:::male
     VDB["Виктор<br>Дмитриевич<br>Бирюков"]:::male
     AVB["Андрей<br>Викторович<br>Бирюков"]:::male
     MYK["Марина<br>Юрьевна<br>Константинова"]:::female
@@ -56,8 +55,6 @@ graph TD
     %% Семья Соколовых
     NDS["Николай<br>Дмитриевич<br>Соколов"]:::male
     VNO["Вера<br>Николаевна<br>Островская"]:::female
-    INO["Ирина<br>Островская"]:::female
-    NNO["Нина<br>Островская"]:::female
     
     %% Семья Бойчевых
     SPB["Стоил<br>Петрович<br>Бойчев"]:::male
@@ -159,7 +156,6 @@ graph TD
     end
     couple_NDB_TSB:::couple
     couple_NDB_TSB --> NNG
-    couple_NDB_TSB --> SNB
     
     %% Семья Гасовых
     subgraph couple_BPG_NNG [" "]
@@ -182,13 +178,6 @@ graph TD
     NDS --> VNO
     NDS --> ENS
     
-    %% Семья Островских
-    subgraph couple_VNO_Unknown [" "]
-        VNO
-    end
-    couple_VNO_Unknown:::couple
-    couple_VNO_Unknown --> INO
-    couple_VNO_Unknown --> NNO
     
     %% Семья Бойчевых
     subgraph couple_SPB_NMB [" "]
