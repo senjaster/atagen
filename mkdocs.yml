@@ -3,7 +3,70 @@ site_url: https://geni.f13f.ru/
 theme:
   name: material
 plugins:
-  - glightbox
+    - glightbox:
+        width: 90%
+    - search
 markdown_extensions:
-  - abbr
-  - pymdownx.betterem
+    - abbr
+    - attr_list
+    - pymdownx.betterem
+    - pymdownx.blocks.caption
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+    - Главное генеалогическое дерево: index.md
+    - Атабеки:
+        - Предки Мосес бека: people/MbA-ancestors.md
+        - Моcес бек: people/MbA.md
+        - Александр Моисеевич: people/AMA.md
+        - Абрам Моисеевич: people/AbMA.md
+        - Анна Моисеевна: people/AnMA.md
+        - Арсен Александрович: people/ArAA.md
+        - Ариана Александровна: people/Ariana-sen.md
+        - Екатерина Арсеновна: people/EAAB.md
+        - Ариана Арсеновна: people/AAA.md
+    - Соколовы:
+        - Екатерина Николаевна: people/ENS.md
+        - Николай Дмитриевич: people/NDS.md
+        - Вера Николаевна Островская: people/VNO.md
+    - Чупровы:
+        - Александр Александрович: people/AACh.md
+        - Александр Иванович: people/AICh.md
+        - Дочери Александра Ивановича Чупрова: people/AICh-dts.md
+    - Ордынские: 
+        - Анастасия Михайловна: people/AMO.md
+        - Сергей Павлович: people/SPO.md
+    - Бойчевы: 
+        - Стоил Петрович: people/SPB.md
+        - Марианна Стоиловна: people/MSB.md
+        - Татьяна Стоиловна: people/TSB.md
+        - Анастасия Стоиловна: people/ASB.md
+        - Надежда Михайловна: people/NMBB.md
+    - Бирюковы: 
+        - Наталья Николаевна Гасова: people/NNG.md
+        - Виктор Дмитриевич: people/VDB.md
+        - Андрей Викторович: people/AVB.md
+    - Козицкие: 
+        - Филлип Емельянович: people/FEK.md
+        - Тарас Филиппович: people/TFK.md
+        - Людмила Тарасовна: people/LTK.md
+        - Марианна Тарасовна: people/MTK.md
+        - Соня: people/SK.md
+        - Катя: people/KK.md
+    - Богдановы: 
+        - Надежда Федоровна: people/NFBdM.md
+        - Михаил Егорович: people/MEB.md
+        - Семья Егора Егоровича Богданова: people/EEB.md
+        - Мария Егоровна Сперанская: people/MESB.md
+    - Сомовы и де Медем: 
+        - Родословцы Сомовых и де Медемов: people/SdM.md
+        - Авдотья Николаевна: people/ANdMS.md
+    - Коломенские: 
+        - Надежда Эммануиловна: people/NEK.md
+        - Константин Юрьевич: people/KJuK.md
+    - Владимир Александрович Нестеров: people/VAN.md
+    - Эммануил Филиппович Циппельзон: people/EFC.md
