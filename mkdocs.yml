@@ -6,6 +6,7 @@ plugins:
     - glightbox:
         width: 90%
     - search
+    - autorefs
 markdown_extensions:
     - abbr
     - attr_list
